@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 const InputForm = (props) => {
   const [itemName, setItemName] = useState({title: "", content: ""});
@@ -28,7 +27,7 @@ const InputForm = (props) => {
     <form>
       <input name="title" onChange={handleTextChange} type="textArea" placeholder="Title" value={itemName.title}></input>
       <input name="content" onChange={handleTextChange} type="textArea" placeholder="Content" value={itemName.content}></input>
-      <button onClick={submitForm}><AddCircleIcon /></button>
+      <button onClick={submitForm}>Add</button>
     </form>
   </div>)
 }
